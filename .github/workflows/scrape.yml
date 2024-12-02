@@ -23,5 +23,5 @@ jobs:
       - name: set up environment
         run: | #creates multi-line string
            pip install playwright
-          
-        
+           python3 script.py
+           ls -a
