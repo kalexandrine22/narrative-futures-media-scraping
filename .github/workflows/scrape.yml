@@ -26,3 +26,6 @@ jobs:
            playwright install chromium
            python3 script.py
            ls -a
+           git add . 
+           git commit -m "commitin' that screenshot"
+           git push origin main
