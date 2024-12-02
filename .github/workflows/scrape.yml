@@ -26,6 +26,8 @@ jobs:
            playwright install chromium
            python3 script.py
            ls -a
+           git config --global user.email "whoohoo@example.com"
+           git config --global user.name "whoohoo prime"
            git add . 
            git commit -m "commitin' that screenshot"
            git push origin main
