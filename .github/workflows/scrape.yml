@@ -5,8 +5,8 @@ name: scrape that web
 # Controls when the workflow will run
 on:
   workflow_dispatch: #enables to run manually 
-  schedule:
-    - cron: "30 1 * * 1-5"
+  #schedule:
+    #- cron: "30 1 * * 1-5"
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -20,5 +20,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: check python version
-        run: python3 -V
+      - name: set up environment
+        run: | #creates multi-line string
+          python3 -m venv .venv
+          ls -a
+        
