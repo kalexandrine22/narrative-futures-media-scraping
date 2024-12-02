@@ -23,5 +23,6 @@ jobs:
       - name: set up environment
         run: | #creates multi-line string
            pip install playwright
+           playwright install chromium
            python3 script.py
            ls -a
