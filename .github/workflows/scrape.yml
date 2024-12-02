@@ -22,6 +22,6 @@ jobs:
 
       - name: set up environment
         run: | #creates multi-line string
-          python3 -m venv .venv
-          ls -a
+           pip install playwright
+          
         
